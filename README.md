@@ -1,2 +1,5 @@
-# Tarea_03
-Tarea 03. Funciones.
+# Tarea 03.
+
+### Funciones en Python.
+
+Consulta el documento anexo con la descripción de los problemas que debes resolver.
