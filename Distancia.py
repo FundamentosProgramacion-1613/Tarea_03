@@ -1,6 +1,6 @@
 #encoding: UTF-8
-# Autor: Adrin E. Tllez Lpez
-#
+# Autor: Adrian E. Tellez Lopez
+# Calcular el rendimiento de un automovil
 
 def calcularRendimientokm(Kr, Gu):
     km = Kr / Gu
