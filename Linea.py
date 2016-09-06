@@ -1,4 +1,6 @@
-
+#encoding: UTF-8
+# Autor: Adrian E. Tellez Lopez
+# Dibujar una linea utilizando magnitud y vector
 
 from Graphics import *
 
