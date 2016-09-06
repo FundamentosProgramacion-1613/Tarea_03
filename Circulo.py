@@ -1,6 +1,6 @@
 #encoding: UTF-8
-# Autor: Adrin E. Tllez Lpez
-#
+# Autor: Adrian E. Tellez Lopez
+# Calcular los datos de un circulo a partir de su radio
 
 def calcularDiametro (radio):
     diametro = radio * radio
