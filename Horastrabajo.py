@@ -1,6 +1,6 @@
 #encoding: UTF-8
-# Autor: Adrin E. Tllez Lpez
-#
+# Autor: Adrian E. Tellez Lopez
+# Calcular el pago de un trabajador
 
 def calcularNormal(hnt, pgn):
     HorasNormal = hnt * pgn
