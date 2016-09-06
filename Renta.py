@@ -1,6 +1,6 @@
 #encoding: UTF-8
-# Autor: Adrin E. Tllez Lpez
-# 
+# Autor: Adrian E. Tellez Lopez
+# Sacar el pago total por renta de peliculas
 
 def numeroEstrenos(estrenos):
     numero = estrenos * 45.00
