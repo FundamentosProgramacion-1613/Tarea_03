@@ -4,7 +4,7 @@
 from Graphics import *
 
 #dibuja cuadrantes
-def quadrants(win):
+def drawQuadrants(win):
     line0 = Line((0,270),(960,270))
     line0.color = Color("green")
     line0.draw(win)
@@ -14,7 +14,7 @@ def quadrants(win):
     line1.draw(win)
 
 #dibuja vector
-def vector(t,win,magnitude):
+def drawVector(t,win,magnitude):
     t.draw(win)
     t.penDown()
     t.pen.color = Color("yellow")
@@ -29,9 +29,9 @@ def main():
     
     t = Arrow((480,270),angle)
         
-    vector(t,win,magnitude)
+    drawVector(t,win,magnitude)
     
-    quadrants(win)
+    drawQuadrants(win)
     
     
 main()              

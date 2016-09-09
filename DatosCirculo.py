@@ -4,7 +4,7 @@
 from math import pi
 
 #Utilza formulas matematicas del circulo para definir las variables correspondientes
-def circleData(radius):
+def getCircleData(radius):
     diam = radius*2
     circunf = diam*pi
     area = (radius**2)*pi
@@ -12,7 +12,7 @@ def circleData(radius):
     
 def main():
     radius = int(input("Introducir radio del circulo"))
-    (diam,circunf,area) = circleData(radius)
+    (diam,circunf,area) = getCircleData(radius)
     print("Circulo con radio:%.2f" %radius)
     print("Diametro:%.2f" %diam)
     print("Circunferencia:%.2f" % circunf)
