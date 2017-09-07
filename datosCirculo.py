@@ -1,27 +1,25 @@
-#Oscar Zuñiga Lara     A01654827
+# Oscar Zuñiga Lara     A01654827
 
 import math
 
-def diametroCirculo(radio): #Funcion que calcula diametro
-    diametro = radio * 2
-    return  diametro
+def main():
+    r = radio()
+    diametrov = diametro(r)
+    area = areaC(r)
+    print("El radio es de ", r ,".")
+    print("El diametro es de ", diametrov)
+    print("El area es de ", area)
 
-def longCircunferencia(radio):  #Función que calcula circunferencia
-    long = radio * 2 * math.pi
-    return  long
-def areaCirculo(radio):  #Función que calcula area de el circulo
-    area = math.pi *radio ** 2
-    return  area
 
-radio = int(input("Inserte Radio"))  #pide el radio
+def radio():
+    radio = int(input("Insert Radio"))
+    return radio
 
-longCircunferencia = longCircunferencia(radio)
-diametroCirculo = diametroCirculo(radio)
-area = areaCirculo(radio)
-                                        #Invoca las funciones
+def diametro(radio):
+    diametrov = radio * 2
+    return diametrov
+def areaC(radio):
+    areav = math.pi * radio ** 2
+    return areav
 
-print("El diametro de el circulo es de: " , diametroCirculo , ".")
-print("La circunferencia de el circulo es de: " , longCircunferencia ,  "." )
-print("El area de el circulo es de: " , area , ".")
-
-                                            #Imprime los datos
+main()

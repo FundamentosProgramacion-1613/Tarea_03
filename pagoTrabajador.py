@@ -1,15 +1,36 @@
 #Oscar Zuñiga Lara    A01654827
 
-def pago(pagoH, horaN, horaE):   #Funcion que calcula el pago
-    pt = horaN * pagoH + horaE * pagoH * 1.5
-    return pt
+def main():
+    hn = horasNormales()
+    he = horasExtras()
+    ph = pagoH()
+    print(pagonormal(hn,ph))
+    print(pagoExtra(he,ph))
+    print(pagaTotal(hn, he, ph))
 
-y = float(input("Inserte Horas normales:"))
-z = float(input("Inserte Horas extras:"))
-x = float(input("Inserte pago por Hora:"))
+def horasNormales():
+    horasN = float(input("Inserte Horas Normales"))
+    return horasN
 
-                                        #Solicita las horas y el pago
+def horasExtras():
+    horasE = float(input("Inserte Horas Extras"))
+    return horasE
 
-pagoTotal = pago(x , y , z)
-                                #Invoca función pago
-print(pagoTotal)    #Imprime el pago total
+def pagonormal(horasN, costoH):
+    pagoN = horasN * costoH
+    return pagoN
+
+def pagoExtra(horasE, costoH):
+    pagoE = horasE * costoH * 1.5
+    return pagoE
+
+def pagoH():
+    pagoh = float(input("Inserte pago por hora: "))
+    return pagoh
+
+def pagaTotal(pagoN, pagoE, pagoH):
+    pagoT = pagoN * pagoH + pagoE * pagoH * 1.5
+    return pagoT
+
+
+main()

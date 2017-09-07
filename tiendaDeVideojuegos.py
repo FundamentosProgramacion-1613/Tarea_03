@@ -1,12 +1,25 @@
 #Oscar Zuñiga Lara,   A01654827
 
-def main(juegosNormales, juegosEstreno):#Función que calcula el costo
-    total = (juegosNormales * 27 + juegosEstreno * 45)
-    return total
+def main():
+    imprimirCostos()
 
-juegosNormales = int(input("Inserte juegos Normales")) #Pide juegos normales
-juegosEstreno = int(input("Inserte juegos Estreno")) #Pide juegos estreno
+def numerosEstrenos():
+    estreno = int(input("Introduzca Estrenos: "))
+    return estreno
 
-total = main(juegosNormales , juegosEstreno) #Invoca el costo
+def numeroNormales():
+    normales = int(input("Introduzca Normales: "))
+    return normales
 
-print("El costo total es de " , total) #Imprime costo
+def calcularRenta(normales,estreno):
+    rentaT = estreno * 45 + normales * 27
+    return rentaT
+
+def imprimirCostos():
+    x = calcularRenta(numeroNormales(),numerosEstrenos())
+    print(x)
+
+main()
+
+
+

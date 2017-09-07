@@ -1,15 +1,24 @@
-#Oscar Zuñiga Lara    A01654827
+# Oscar Zuñiga Lara    A01654827
 
-litrosG = float(input("¿Cuánto ha gastado?"))
-kilometrosR = float(input("¿Cuánto ha recorrido?"))
-                                #Pide los litros y kilometros
-def kmL(km, l): #Define función que calcula el rendimiento en KM/L
-    rendimiento = km/l
-    return  rendimiento
+def main():
+    kmrecorridos = float(input("Inserte kilometros recorridos"))
+    litrosconsumidos = float(input("Inserte Litros Consumidos"))
+    print(kmL(kmrecorridos, litrosconsumidos))
+    print(millGal(kmrecorridos,litrosconsumidos))
+    kmArecorrer = float(input("Cuanto quieres viajar"))
+    print(litrosnecesarios(kmrecorridos,kmL(kmrecorridos,litrosconsumidos)))
 
-def millasGalon(km, l): #Función que calcula el rendimiento en millas/galon
-    rendimiento = (km/1.609344) / (l * 0.264172051 )
-    return  rendimiento
+def kmL(km, l):
+    rend = km / l
+    return rend
 
-print("El rendimiento es de: ", kmL(kilometrosR, litrosG), "Km/L.")
-print("El rendimiento es de: ", millasGalon(kilometrosR, litrosG), "mi/galon.")
+
+def millGal(km, l):
+    rend = (km * .62137) / (l * .2996915)
+    return rend
+
+def litrosnecesarios(km,rendimiento):
+    litros = km/rendimiento
+    return litros
+
+main()
