@@ -6,7 +6,6 @@ def main():
     ph = pagoH()
     print(pagonormal(hn,ph))
     print(pagoExtra(he,ph))
-    print(pagaTotal(hn, he, ph))
 
 def horasNormales():
     horasN = float(input("Inserte Horas Normales"))

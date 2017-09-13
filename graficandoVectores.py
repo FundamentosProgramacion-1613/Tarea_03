@@ -13,3 +13,4 @@ def vector(grados ,magnitud):   #función que dibuja los vectores
 
 main()
 
+
